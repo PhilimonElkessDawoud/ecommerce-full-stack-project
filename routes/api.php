@@ -33,15 +33,21 @@ Route::post('/logout', [AuthController::class, 'logout']);
 //ProductInstanceController
 Route::post('/getAllInstances', [ProductInstanceController::class, 'getAllInstances']);
 Route::post('/getInstanceById/{id}', function ($id) {
-    return new ProductInstanceResource(ProductInstance::findOrFail($id));
+
+    $inst = ProductInstance::find($id);
+
+    if (!$inst) {
+        return response()->json('Product Instance Not Found');
+    }
+
+    return new ProductInstanceResource($inst);
 });
 
 Route::post('/searchForInstance/{string}', function ($string) {
 
     $inst = ProductInstance::where('name', 'Like', "%$string%")->first();
 
-    if(!$inst)
-    {
+    if (!$inst) {
         return response()->json('Product Instance Not Found');
     }
 
@@ -51,10 +57,9 @@ Route::post('/searchForInstance/{string}', function ($string) {
 
 Route::post('/getUser/{email}', function ($email) {
 
-    $user = User::where('email','LIKE' , "%$email%")->first();
+    $user = User::where('email', 'LIKE', "%$email%")->first();
 
-    if(!$user)
-    {
+    if (!$user) {
         return response()->json('User Not Found');
     }
 
