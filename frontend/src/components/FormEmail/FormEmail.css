@@ -1,0 +1,96 @@
+.formEmail{
+	display: flex;
+}
+
+.formEmail p{
+	margin: 0;
+	font-size: x-small;
+}
+
+.formEmail .section-heading h5{
+    text-align: center;
+	margin-top: 2%;
+}
+
+.formEmail .section-heading h1{
+	margin: 2% 0 5% 0;
+    text-align: center;
+}
+
+.formEmail .col-md-6{
+    margin: auto;
+}
+
+.formEmail input{
+	border-radius: 0px;
+	outline: none;
+	box-shadow: none;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.formEmail input .class-control{
+	height: 44px;
+	line-height: 44px;
+}
+
+.formEmail .form-check {
+    margin-bottom: 0;
+}
+
+.formEmail span {
+	display: inline-block;
+	margin-left: 8px;
+}
+.formEmail span a{
+	transition: all 0.5s;
+	background-color: #aaa;
+	width: 26px;
+	height: 26px;
+	display: inline-block;
+	text-align: center;
+	line-height: 26px;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 12px;
+	margin-right: 5px;
+}
+.formEmail .share {
+	margin-top: 30px;
+	border-top: 1px solid #ebecf0;
+	padding: 15px 0px;
+}
+.formEmail h6 {
+	font-size: 14px;
+	color: #4a4a4a;
+	font-weight: 400;
+}
+.formEmail span a:hover{
+	background-color: var(--color-main);
+}
+.formEmail .button {
+    width: 40%;
+	cursor: pointer;
+	background-color: var(--color-main);
+    border: 1px solid var(--color-main);
+	outline: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 0.4px;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+
+.formEmail .next{
+	display: flex;
+    justify-content: space-between;
+}
+
+.formEmail .button:hover{
+	background-color: #fff;
+	color: var(--color-main);
+}

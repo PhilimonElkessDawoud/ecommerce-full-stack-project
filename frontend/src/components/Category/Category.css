@@ -1,0 +1,29 @@
+.category{
+	width: 10%;
+    min-width: 250px;
+    border: 1px solid #ebecf0;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+    text-align: center;
+}
+
+.category img {
+    width: 100%;
+}
+
+.category .des h3{
+    
+	padding-top: 15px;
+    color: #1a1a1a;
+    font-weight: bold;
+	
+	display: -webkit-box;
+    max-width: 400px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+

@@ -1,0 +1,46 @@
+.product{
+	width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #ebecf0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.product .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+.product .des span{
+    color: #606063;
+    font-size: 12px;
+}
+
+.product .des h5{
+	padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+	
+	display: -webkit-box;
+    max-width: 400px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.product .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a1a;
+}

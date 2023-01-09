@@ -1,0 +1,120 @@
+ nav{
+    background-color: #fff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    padding: 0px 10px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 23px;
+    font-weight: 500;
+} 
+
+.active{
+    color: var(--color-main);
+}
+
+.logo{
+    width: 50px;
+    height: 30px;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+}
+
+nav > a{
+    text-decoration: none;
+    color: var(--color-main)!important;
+}
+
+#navbar{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: auto;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 10px;
+    margin: 5px;
+    position: relative;
+    /* text-decoration: none;
+    color: var(--color-main);
+    transition: 0.3s ease; */
+}
+
+#navbar li a{
+    text-decoration: none;
+    color: var(--color-main);
+    transition: 0.3s ease;
+}
+
+#navbar li a.active{
+    text-decoration: none;
+    color: var(--color-main);
+    transition: 0.3s ease;
+}
+
+#navbar li a.active:link{
+    text-decoration: none;
+    color: var(--color-main);
+    transition: 0.3s ease;
+}
+
+#navbar li a.active::after,
+#navbar li a.active:hover::after{              /* Adding effect to navbar elements */
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: var(--color-main);
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+#navbar input{
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    height: 35px;
+    width: 700px;
+    border: 1px solid rgb(187, 186, 186);
+    border-right: none;
+    padding-top: 5px;
+    padding-left: 25px;
+    font-size: 17px;
+}
+
+#navbar input:focus{
+    outline: none;
+}
+
+#navbar button{
+    height: 35px;
+    width: 50px;
+    border: 1px solid rgb(187, 186, 186);
+    border-left: none;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #fff;
+    color: var(--color-main);
+}
+
+#navbar button:before
+{
+    width: 1px;
+    height: 80%;
+    position: relative;
+    top: 3px;
+    right: 3px;
+    float: left;
+    background-color: rgb(187, 186, 186);
+    display: block;
+    content: '';
+}
+

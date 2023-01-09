@@ -1,0 +1,39 @@
+.ProfileHeader{
+    border-bottom: 1px solid #c9c8c8;
+    margin: 0 30px;
+}
+
+.ProfileHeader .list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: auto;
+}
+
+.ProfileHeader .list li{
+    list-style: none;
+    padding: 0 10px;
+    margin: 5px;
+    position: relative;
+}
+
+.ProfileHeader .list li a{
+    transition: 0.3s ease;
+    text-decoration: none;
+    font-size: 33px;
+    color: #c9c8c8;
+}
+
+.ProfileHeader .list li a:active{
+    color: var(--color-main);
+}
+
+.ProfileHeader .list li a:active::after{  /* Adding effect to navbar elements */             
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: var(--color-main);
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+}

@@ -1,0 +1,12 @@
+.hero-main{
+    padding-right: 50px;
+    padding-left: 50px;
+    /* padding-top: 10px; */
+    background-color: #fff;
+}
+
+.hero-main img{
+    width: 100%;
+    height: 94vh;
+    object-fit: cover;
+}

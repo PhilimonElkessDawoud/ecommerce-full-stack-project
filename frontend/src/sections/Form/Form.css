@@ -1,0 +1,51 @@
+.contact-page {
+    margin:auto;
+	margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.contact-page .col-md-6{
+    margin: 0 auto;
+}
+
+.contact-page .line-dec{
+	border-top: 1px solid #ebecfe;
+}
+
+.contact-page .line-dec-2 {
+	width: 60px;
+	height: 5px;
+	background-color: var(--color-main);
+	margin: 0 auto;
+}
+
+.contact-page .right-content span {
+	display: inline-block;
+	margin-left: 8px;
+}
+.contact-page .right-content span a{
+	transition: all 0.5s;
+	background-color: #aaa;
+	width: 26px;
+	height: 26px;
+	display: inline-block;
+	text-align: center;
+	line-height: 26px;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 12px;
+	margin-right: 5px;
+}
+.contact-page .right-content .share {
+	margin-top: 30px;
+	border-top: 1px solid #ebecf0;
+	padding: 15px 0px;
+}
+.contact-page .right-content h6 {
+	font-size: 14px;
+	color: #4a4a4a;
+	font-weight: 400;
+}
+.contact-page .right-content span a:hover{
+	background-color: var(--color-main);
+}
