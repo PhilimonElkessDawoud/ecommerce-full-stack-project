@@ -32,7 +32,7 @@ const Hero = () => {
       </div>
 
       <div className="body-main">
-        
+        {/* map products */}
       </div>
     </>
   )
